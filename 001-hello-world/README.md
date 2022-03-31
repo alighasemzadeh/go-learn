@@ -17,4 +17,4 @@ func main() {
 ````shell
 Hello, World!
 ````
-## Note: Don't forgo put space + dot.
+## Note: Don't forgot put space + dot.
