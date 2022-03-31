@@ -14,4 +14,7 @@ func main() {
 }
 ````
 ## 5: In terminal run `go run .`
+````shell
+Hello, World!
+````
 ## Note: Don't forgo put space + dot.
