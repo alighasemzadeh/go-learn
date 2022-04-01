@@ -17,4 +17,8 @@ func main() {
 ````shell
 Hello, World!
 ````
-## Note: Don't forgot put space + dot.
+### Note: Don't forgot put space + dot.
+
+## 6: Also you can use `go run .\hello.go` to run your application.
+## 7: To Build executable file you should use `go build .\hello.go` which build .exe file for you.
+### Note: I use gitignore to remove hello.exe
