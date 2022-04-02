@@ -1,7 +1,7 @@
 # Variables
 
-Data store in variables within the name.
-This data is stored in RAM not in HDD, after the program has finished the memory will be free.
+Data stores in variables within name.
+This data store in RAM not in HDD, then after program finished memory become free.
 Sometimes variable has initiation value and sometimes no, We describe both ways.
 
 ## Data Types
@@ -34,7 +34,7 @@ variablename := value
 In this type of variable detonation compiler decide for [Data Types](#data-types).
 
 ## Variable with initiation value
-To create a variable with an initiation value you can see the bellow example.
+To create variable with initiation value you can see bellow example.
 ```go
 package main
 import ("fmt")
@@ -51,10 +51,10 @@ func main() {
   fmt.Println(grade2)
 }
 ```
-Please compile an example.
+Please compile example.
 
 ## Variable without initiation value
-If you don't value it when you create it you can define it and use it later.
+If you don't value when you create it you can define it and use it latter.
 ```go
 package main
 import ("fmt")
@@ -76,13 +76,13 @@ Please compile example.
 You can do this job with inline multi variables or `var ()` block.
 
 ### Multi Variables in one line
-Like the bellow line you can define it.
+Like bellow line you can define it.
 `var a, b, c, d int = 1, 3, 5, 7`
 `c, d := 7, "World!"`
 For exercise and get how it works try to print `a,b,c,d`.
 
 ### Multi Variables in Var Block
-Like the bellow block you can define it.
+Like bellow block you can define it.
 ```go
 var (
      a int
@@ -93,4 +93,24 @@ var (
 For example:
 ```go
 package main
-im
+import ("fmt")
+
+func main() {
+   var (
+     a int
+     b int = 1
+     c string = "hello"
+   )
+
+  fmt.Println(a)
+  fmt.Println(b)
+  fmt.Println(c)
+}
+```
+
+## Variables Name Rules
+1. Can not start with digits `0-1`
+2. Can not contain `!@#$%^&*()` but you can use `_`
+3. Can not use keywords like `var`,`func`,...
+4. Variable names are case-sensitive.
+5. Variable names cannot contain spaces.
