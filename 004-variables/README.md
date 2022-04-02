@@ -1,7 +1,7 @@
 # Variables
 
-Data stores in variables within name.
-This data store in RAM not in HDD, then after program finished memory become free.
+Data store in variables within the name.
+This data is stored in RAM not in HDD, after the program has finished the memory will be free.
 Sometimes variable has initiation value and sometimes no, We describe both ways.
 
 ## Data Types
@@ -34,7 +34,7 @@ variablename := value
 In this type of variable detonation compiler decide for [Data Types](#data-types).
 
 ## Variable with initiation value
-To create variable with initiation value you can see bellow example.
+To create a variable with an initiation value you can see the bellow example.
 ```go
 package main
 import ("fmt")
@@ -51,4 +51,46 @@ func main() {
   fmt.Println(grade2)
 }
 ```
+Please compile an example.
+
+## Variable without initiation value
+If you don't value it when you create it you can define it and use it later.
+```go
+package main
+import ("fmt")
+
+func main() {
+  var x1 string
+  var x2 int
+  var x3 bool
+
+  fmt.Println(x1)
+  fmt.Println(x2)
+  fmt.Println(x3)
+}
+```
 Please compile example.
+### Note: You can not use `:=` when you don't know data types.
+
+## Define Multi Variables
+You can do this job with inline multi variables or `var ()` block.
+
+### Multi Variables in one line
+Like the bellow line you can define it.
+`var a, b, c, d int = 1, 3, 5, 7`
+`c, d := 7, "World!"`
+For exercise and get how it works try to print `a,b,c,d`.
+
+### Multi Variables in Var Block
+Like the bellow block you can define it.
+```go
+var (
+     a int
+     b int = 1
+     c string = "hello"
+   )
+```
+For example:
+```go
+package main
+im
