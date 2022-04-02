@@ -27,3 +27,6 @@ func main() {
   fmt.Println("Hello World!")
 }
 ```
+
+
+### Note: `//` for short comment,`/* Comment */` for long comment.
